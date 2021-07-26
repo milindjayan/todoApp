@@ -1,4 +1,5 @@
- <h2>Create Task</h2>
+ <h2>Create/Update Task</h2>
+ <a href="{% url 'tasks' %}">Back</a>
 <form method="POST" action="">
     {% csrf_token %}
     {{form.as_p}}
